@@ -211,22 +211,19 @@
 }
 
 .main__container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    height: 90vh;
     align-items: center;
     justify-self: center;
     margin: 0 auto;
-    /* 90% of the screen */
-    height: 90vh;
     background-color: #F7F8FD;
     z-index: 1;
     width: 100%;
     max-width: 1300px;
-    padding: 0 50px;
+    padding: 0 50px 3rem 50px;
 }
 
-.main__content h1{
-    font-size: 4rem;
+.main__title h1{
+    font-size: 2rem;
     background-color: #FD6C01;
     background-size: 100%;
     -webkit-background-clip: text;
@@ -235,9 +232,11 @@
     -moz-text-fill-color: transparent;
 }
 
-.main__content h2{
-    font-size: 4rem;
-    background-color: #FD6C01;
+.main__title h2{
+    padding-top: 5px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: #666666;
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -245,10 +244,21 @@
     -moz-text-fill-color: transparent;
 }
 
-.main__content p {
+.main__section h1{
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    background-color: #494949;
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.main__section p {
     color: #494949;
     margin-top: 1rem;
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: 500;
     font-family: 'Poppins';
 }
@@ -319,15 +329,16 @@
 
 /* Mobile Responsive */
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 768px) {
     .main__container{
-        display: grid;
-        grid-template-columns: auto;
         align-items: center;
-        justify-self: center;
-        width: 100%;
-        margin: 0 auto;
-        height: 90vh;
+    justify-self: center;
+    margin: 0 auto;
+    background-color: #F7F8FD;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px 3rem 50px;
     }
 
     .main__content{     
@@ -458,7 +469,7 @@
 
 @media screen and (max-width: 1312px) {
     .services {
-        height: 2000px;
+        height: 1500px;
     }
 
     .services h1 {
