@@ -236,20 +236,17 @@
 }
 
 .main__content h2{
-    font-size: 4rem;
-    background-color: #FD6C01;
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+    color: #494949;
+    font-size: 2.5rem;
+    font-weight: 500;
+    font-family: 'Poppins';
 }
 
 .main__content p {
     color: #494949;
     margin-top: 1rem;
-    font-size: 2rem;
-    font-weight: 500;
+    font-size: 1.5rem;
+    font-weight: 400;
     font-family: 'Poppins';
 }
 
@@ -282,7 +279,7 @@
     left: 0;
     width: 0;
     height: 100%;
-    background: #4837ff;
+    background: #655ded;
     transition: all 0.35s;
     border-radius: 4px;
 }
@@ -491,6 +488,7 @@
 }
 
 #footer__logo {
+    padding: 12px;
     color: #fff;
     display: flex;
     align-items: center;
@@ -570,6 +568,10 @@
     width: 240px;
 }
 
+.social__icons{
+    padding: 12px;
+}
+
 .social__logo{
     color: #fff;
     justify-self: flex-start;
@@ -583,6 +585,7 @@
 }
 
 .website__rights{
+    padding: 12px;
     color: #fff;
 }
 
